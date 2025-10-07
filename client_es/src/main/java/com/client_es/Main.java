@@ -28,13 +28,22 @@ public class Main {
     String versione = in.readLine();
     System.out.println("Versione" + versione);
     
-    System.out.println("Inserisci una stringa da convertire");
-    String miaFrase = sc.nextLine();
+    do{
+        System.out.println("Inserire parola da convertire");
+        String myFrase = sc.nextLine();
 
-    out.println(miaFrase);
+        out.println(myFrase);
 
-    String upperFrase = in.readLine();
-    System.out.println("Stringa ricevuta: " + upperFrase);
-    socket.close();
+        if(myFrase.equals("!")){
+
+            break;
+        }
+
+        String upperFrase = in.readLine();
+
+        System.out.println(upperFrase);
+    }while(true);
+    
+    System.out.println("Cominicazione terminata");  socket.close();
    }
 }
