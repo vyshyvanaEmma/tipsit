@@ -34,6 +34,15 @@ public class ClientHandler implements Runnable {
             String method = parti[0];
             String path = parti[1];
 
+            if (!path.contains(".") && !path.endsWith("/")) {
+                path += "/";
+                out.println("HTTP/1.1 302 Found");
+                out.println("Location: " + path);
+                out.println("Connection: close");
+                out.println();
+                return;
+            }
+
             if (!method.equalsIgnoreCase("GET")) {
                 String body = "<h1>405 - Method Not Allowed </h1>";
                 out.println("HTTP/1.1 405 Method Not Allowed");
