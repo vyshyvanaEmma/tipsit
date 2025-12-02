@@ -61,3 +61,23 @@ public class Main {
 /ciao -> 301    (header: Location .....), nuova location viene salvata per poi non dare problemi
 / * -> 404
 */
+
+
+
+/* 
+curl -X GET http://localhost:3000 \
+  -H "Host: localhost:3000" \
+  -H "Connection: keep-alive" \
+  -H "Upgrade-Insecure-Requests: 1" \
+  -H "User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36" \
+  -H "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*;q=0.8,application/signed-exchange;v=b3;q=0.7" \
+  -H "Sec-Fetch-Site: none" \
+  -H "Sec-Fetch-Mode: navigate" \
+  -H "Sec-Fetch-User: ?1" \
+  -H "Sec-Fetch-Dest: document" \
+  -H "sec-ch-ua: \"Google Chrome\";v=\"117\", \"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"117\"" \
+  -H "sec-ch-ua-mobile: ?0" \
+  -H "sec-ch-ua-platform: \"Linux\"" \
+  -H "Accept-Encoding: gzip, deflate, br" \
+  -H "Accept-Language: en-US,en;q=0.9"
+*/
