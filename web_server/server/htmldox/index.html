@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Il Nostro Sito</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
+    <!-- Navbar -->
+    <nav class="bg-blue-600 text-white shadow-lg">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+                <h1 class="text-2xl font-bold mb-2 md:mb-0">Il Nostro Sito</h1>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#" class="hover:text-blue-200 font-semibold">Home</a>
+                    <a href="about.html" class="hover:text-blue-200">About Us</a>
+                    <a href="contact.html" class="hover:text-blue-200">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <img src="caneT.jpg" alt="Immagine di un cane" class="mx-auto max-w-full h-auto rounded-lg shadow-lg">
+
+    <!-- Hero Section -->
+    <div class="container mx-auto px-4 py-16">
+        <div class="max-w-3xl mx-auto text-center">
+            <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
+                Benvenuto nel nostro sito
+            </h2>
+            <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                Siamo lieti di averti qui! Questo è un sito web semplice e moderno creato con HTML e Tailwind CSS. 
+                Esplora le nostre pagine per scoprire chi siamo e come puoi contattarci. Il nostro obiettivo è 
+                fornire un'esperienza utente eccellente su tutti i dispositivi.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="about.html" class="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition font-semibold">
+                    Scopri di più
+                </a>
+                <a href="contact.html" class="bg-gray-200 text-gray-800 px-8 py-3 rounded-lg hover:bg-gray-300 transition font-semibold">
+                    Contattaci
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <div class="bg-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <div class="text-center p-6">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Veloce</h3>
+                    <p class="text-gray-600">Design ottimizzato per prestazioni eccellenti</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Responsive</h3>
+                    <p class="text-gray-600">Perfetto su ogni dispositivo</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Moderno</h3>
+                    <p class="text-gray-600">Design pulito e contemporaneo</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 mt-16">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2026 Il Nostro Sito. Tutti i diritti riservati.</p>
+        </div>
+    </footer>
+</body>
+</html>
