@@ -23,7 +23,7 @@ public class ClientHandler implements Runnable {
                 out.println("HTTP/1.1 400 Bad Request");
                 out.println("Content-Length: 0");
                 out.println();
-                logRequest(socket, "GET", "/", 400, "Unknown", 0); // Log error 400
+                logRequest(socket, "GET", "/", 400, "Unknown", 0); 
                 return;
             }
 
@@ -32,7 +32,7 @@ public class ClientHandler implements Runnable {
                 out.println("HTTP/1.1 400 Bad Request");
                 out.println("Content-Length: 0");
                 out.println();
-                logRequest(socket, "GET", "/", 400, "Unknown", 0); // Log error 400
+                logRequest(socket, "GET", "/", 400, "Unknown", 0); 
                 return;
             }
 
@@ -59,7 +59,7 @@ public class ClientHandler implements Runnable {
                 return;
             }
 
-            // Metodi
+            // methods
             int status = 200;
             int bytesSent = 0;
             switch (method.toUpperCase()) {
@@ -159,7 +159,7 @@ public class ClientHandler implements Runnable {
         }
     }
 
-    // Lettura del body per POST
+    // lettura body (post)
     private static String readBody(BufferedReader in, int contentLength) throws IOException {
         if (contentLength <= 0) {
             return "";
@@ -176,7 +176,7 @@ public class ClientHandler implements Runnable {
         return new String(buf, 0, read);
     }
 
-    // Gestione del Content-Type
+    // content-types
     private static String getContentType(File f) {
         String fileName = f.getName();
         if (fileName.endsWith(".html")) {
